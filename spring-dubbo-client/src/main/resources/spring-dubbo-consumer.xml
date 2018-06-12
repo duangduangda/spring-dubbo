@@ -10,4 +10,6 @@
     <dubbo:application name="demo-consumer"/>
     <dubbo:registry address="zookeeper://10.100.139.118:2181"/>
     <dubbo:reference id="demoService" interface="com.smallhk.spring.dubbo.api.DemoService"/>
+    <!-- 直连方式 -->
+    <!--<dubbo:reference id="demoService" interface="com.smallhk.spring.dubbo.api.DemoService" url="dubbo://localhost:20880"/>-->
 </beans>
